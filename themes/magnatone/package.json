@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "start": "parcel assets/js/app.js -d static",
+    "build": "parcel assets/js/app.js -d static"
+  },
   "dependencies": {
     "node-sass": "^4.12.0",
     "parcel-bundler": "^1.12.4"
