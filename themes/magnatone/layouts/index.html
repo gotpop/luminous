@@ -1,0 +1,43 @@
+{{ define "main" }}
+
+	<div class="container">
+
+		<header role="banner">
+			<h1>Site</h1>
+		</header>
+
+		<main role="main">
+			<h3>Work 2</h3>
+
+			{{ range where .Site.RegularPages "Section" "work" }}
+				<h2>{{ .Title }}</h2>
+			{{ end }}
+
+			{{ range (where .Site.RegularPages ".Params.hidefromhome" "!=" "true") }}
+
+				<h2 class="entry-title" itemprop="headline">
+					<a href="{{ .RelPermalink }}">{{ .Title }}</a>
+				</h2>
+				<span class="entry-meta">
+					<time itemprop="datePublished" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 02, 2006" }}</time>
+				</span>
+
+			{{ end }}
+
+		</main>
+
+	</div>
+
+{{ end }}
+
+{{ define "footer" }}
+
+	<footer role="contentinfo">
+		<div class="hr"></div>
+		<div class="footer-link">
+			<a href="mailto:test@test.com" target="_blank">Email</a> / <a href="https://cloudconfusing.com">Site</a>
+		</div>
+		<div class="copyright">Copyright &copy; 2019</div>
+	</footer>
+
+{{ end }}

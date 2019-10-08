@@ -1,0 +1,12 @@
+name = "magnatone"
+license = "MIT"
+licenselink = "https://github.com/salcan/BeyondNothing/blob/master/LICENSE"
+description = "magnatone"
+homepage = "https://ollyvenning.com"
+min_version = 0.14
+tags = ["portfolio", "video", "minimalist", "clean"]
+features = "time travel"
+
+[author]
+  name = "GotPop"
+  homepage = "https://www.gotpop.net"
