@@ -1,0 +1,11 @@
+{
+  "name": "luminous",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:gotpop/luminous.git",
+  "author": "gotpop <liam@gotpop.net>",
+  "license": "MIT",
+  "scripts": {
+    "start": "hugo server -D"
+  }
+}
