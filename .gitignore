@@ -1,2 +1,5 @@
-
 .DS_Store
+/themes/magnatone/node_modules
+.cache
+/public
+/themes/magnatone/public

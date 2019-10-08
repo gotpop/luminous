@@ -1,0 +1,1 @@
+{"version":3,"sources":["..\\scss\\vars\\_vars.scss"],"names":[],"mappings":"AAEA,KAAK,CAAC;EACJ,eAAe,CAAA,MAAC,GACjB","file":"app.css","sourceRoot":"..\\assets\\js","sourcesContent":["// Vars\r\n\r\n:root {\r\n  --main-bg-color: brown;\r\n}\r\n"]}
