@@ -1,7 +1,7 @@
 <header role="banner">
 	<a href="/"><h1>Si</h1></a>
 
-	{{ range .Site.Pages }}
+	{{ range .Pages }}
 		<h2 class="entry-title" itemprop="headline">
 			<a href="{{ .RelPermalink }}">{{ .Title }}</a>
 		</h2>
