@@ -4,17 +4,17 @@
 	</a>
 
 	<ul>
-		{{ range where .Site.RegularPages "Section" "" -}}
-			<li>
-				<a href="{{ .RelPermalink }}">{{ .Title }}</a>
-			</li>
-		{{ end }}
-
-		{{ range .Site.Sections}}
+		{{ range .Site.Sections.Reverse}}
 			<li>
 				<a href="{{ .RelPermalink }}">{{ .Title }}</a>
 			</li>
 		{{ end -}}
+
+		{{ range where .Site.RegularPages.Reverse "Section" ""}}
+			<li>
+				<a href="{{ .RelPermalink }}">{{ .Title }}</a>
+			</li>
+		{{ end }}
 	</ul>
 
 </header>
