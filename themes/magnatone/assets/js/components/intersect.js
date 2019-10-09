@@ -5,6 +5,7 @@ let options = {
 }
 
 let observer = new IntersectionObserver(callback, options);
+<<<<<<< HEAD
 
 document.addEventListener("DOMContentLoaded", function () {
     const imageObserver = new IntersectionObserver((entries, imgObserver) => {
@@ -23,3 +24,5 @@ document.addEventListener("DOMContentLoaded", function () {
         imageObserver.observe(v);
     })
 });
+=======
+>>>>>>> 4f3ab1efc45c98a463f508e34d499bdda1ecdf29
