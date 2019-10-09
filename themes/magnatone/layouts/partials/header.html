@@ -1,10 +1,20 @@
 <header role="banner">
-	<a href="/"><h1>Si</h1></a>
+	<a href="/">
+		<h1>Si</h1>
+	</a>
 
-	{{ range .Pages }}
-		<h2 class="entry-title" itemprop="headline">
-			<a href="{{ .RelPermalink }}">{{ .Title }}</a>
-		</h2>
-	{{ end }}
+	<ul>
+		{{ range where .Site.RegularPages "Section" "" -}}
+			<li>
+				<a href="{{ .RelPermalink }}">{{ .Title }}</a>
+			</li>
+		{{ end }}
+
+		{{ range .Site.Sections}}
+			<li>
+				<a href="{{ .RelPermalink }}">{{ .Title }}</a>
+			</li>
+		{{ end -}}
+	</ul>
 
 </header>

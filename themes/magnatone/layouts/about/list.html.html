@@ -4,10 +4,11 @@
 		<main role="main">
 			<h3>About....</h3>
 
-				{{ range .Pages }}
+			{{ range .Pages }}
 				<h2 class="entry-title" itemprop="headline">
-					<a href="{{ .RelPermalink }}">{{ .Title }}</a>
+					{{ .Title }}
 				</h2>
+				{{ .Content}}
 			{{ end }}
 		</main>
 
